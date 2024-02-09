@@ -1,0 +1,135 @@
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grey-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .8)), url('bg.jpg');
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+}
+
+.first-div {
+    height: 10%;
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.second-div {
+    flex-grow: 1;
+    background-color: transparent; /* Make the background transparent */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding to the second-div */
+}
+
+
+/* Style for the logo or text */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Style for the menu */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 40px;
+    display: inline;
+}
+
+.menu ul li {
+display: inline-block;
+margin-right: 20px;
+color: rgb(255, 255, 255);
+letter-spacing: 2px; /* Adjust the letter spacing */
+position: relative;
+cursor: pointer;
+}
+
+.menu ul li::before {
+content: '';
+position: absolute;
+bottom: -2px; /* Adjust the position of the underline */
+left: 0;
+width: 0;
+height: 2px; /* Adjust the height of the underline */
+background-color: white; /* Adjust the color of the underline */
+transition: width 0.3s ease; /* Add transition effect */
+}
+
+.menu ul li:hover::before {
+width: 100%; /* Expand the width of the underline on hover */
+}
+
+.menu ul li.no-underline::before {
+display: none; /* Hide underline for li with class no-underline */
+}
+
+/* Style for the button */
+.order-button {
+    padding: 10px 20px;
+    background-color: #f48320; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.order-button:hover {
+    background-color: #404142; /* Darker blue */
+}
+
+
+
+/* Style for the tagline */
+.tagline {
+text-align: center;
+transition: transform 0.5s ease; /* Add transition effect */
+}
+
+.tagline p {
+font-size: 100px;
+margin: -4rem; /* Remove default margin */
+margin-bottom: -1rem;
+color: #f48320;
+
+}
+
+.tagline:hover {
+transform: scale(1.1); /* Scale up the tagline on hover */
+}
+/* Style for the tagline-detail */
+.tagline-detail {
+    text-align: center;
+}
+.tagline-detail p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom:0px; /* Add some space between paragraphs */
+    color: white;
+}
+
+.second-div .order-button{
+    font-size: larger;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px; /* Add margin top */
+    border-radius: 25px;
+}
